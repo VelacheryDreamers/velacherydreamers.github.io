@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · Velachery Dreamers</title>
+<script>
+  // Club web app: send /app/<screen>?… to the app, which opens that screen.
+  (function () {
+    var l = window.location;
+    if (l.pathname.indexOf('/app/') === 0) {
+      l.replace(l.origin + '/app/?__p=' + encodeURIComponent(l.pathname.slice(4) + l.search + l.hash));
+    }
+  })();
+</script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <h1>Page not found</h1>
+  <p><a href="/">← Velachery Dreamers</a></p>
+</main>
+</body>
+</html>
